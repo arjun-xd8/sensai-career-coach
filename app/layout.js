@@ -15,6 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider appearance={{
+      // this will affect clerk UI
       baseTheme: dark
     }}>
     <html lang="en" suppressHydrationWarning>
