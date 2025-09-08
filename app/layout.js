@@ -15,16 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider appearance={{
-      // this will affect clerk UI
+      // this will affect clerk UI  
       baseTheme: dark
     }}>
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className}`}
-        >
+      <body className={`${inter.className}`}>
         <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
             >

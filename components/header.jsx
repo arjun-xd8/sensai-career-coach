@@ -65,16 +65,15 @@ const Header = () => {
           </SignedOut>
 
           <SignedIn>
+            {/* this is your UserButton (google account) which shows when you're signedIn*/}
             <UserButton 
-              appearance={
-                {
+              appearance={{
                   elements:{
                     avatarBox:'w-10 h-10',
                     userButtonPopoverCard: 'shadow-xl',
                     userPreviewMainIdentifier: 'font-semibold'
                   }
-                }
-              }
+              }}
               afterSignOutUrl='/'
             />
           </SignedIn>
